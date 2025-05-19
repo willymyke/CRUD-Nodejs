@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select page</title>
+
+</head>
+<body>
+   <table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>password</th>
+            <th>action</th>
+        </tr>
+    
+    </thead>
+    
+     students.forEach(students=> {
+        <tr>
+        <td>${students.name}</td>
+        <td>${students.email}</td>
+        <td>${students.password}</td>
+        <td><a href="/delete/${students.id} ">Delete</a>
+            <a href="/update/${students.id} ">update</a></td>
+        </tr>
+        })
+    
+   </table> 
+</body>
+</html>
